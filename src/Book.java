@@ -5,7 +5,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Книга - " + bookName + ", " + author + "дата публикации: " + publishYear;
+        return "Книга - " + bookName + ". " + author + "Дата публикации: " + publishYear;
     }
 
     public Book(String bookName, Author author, int publishYear) {

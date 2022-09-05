@@ -4,7 +4,7 @@ public class Author {
 
     @Override
     public String toString() {
-        return "автор: " + firstName +" " + surName + ", ";
+        return "Автор: " + firstName +" " + surName + ". ";
     }
 
     public Author(String firstName, String surName) {
