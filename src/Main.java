@@ -1,13 +1,13 @@
 public class Main {
     public static void main(String[] args) {
 
-        Author efremov = new Author("Иван", "Ефремов");
-        Author braun = new Author("Дэн", "Браун");
+        Author ivanEfremov = new Author("Иван", "Ефремов");
+        Author denBraun = new Author("Дэн", "Браун");
 
-        Book nebulaBraun = new Book("Туманность андромеды", efremov,1956);
-        Book originBraun = new Book("Происхождение",braun,2017);
-        nebulaBraun.setPublishYear(1957);
-        System.out.println(nebulaBraun);
+        Book nebulaEfremov = new Book("Туманность андромеды", ivanEfremov,1956);
+        Book originBraun = new Book("Происхождение",denBraun,2017);
+        nebulaEfremov.setPublishYear(1957);
+        System.out.println(nebulaEfremov);
         System.out.println(originBraun);
     }
 }
