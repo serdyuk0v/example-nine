@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
+//Задание №9 Объекты и классы
         Author ivanEfremov = new Author("Иван", "Ефремов");
         Author denBraun = new Author("Дэн", "Браун");
 
@@ -11,5 +12,14 @@ public class Main {
 
         System.out.println(nebulaEfremov);
         System.out.println(originBraun);
+        System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+");
+// Задание №10 Методы объектов
+
+        Author ivanEfremov2 = new Author("Николай", "Ефремов");
+        Book originBraun2 = new Book("Происхождение",denBraun,2017);
+
+        System.out.println(ivanEfremov.equals(ivanEfremov2));
+        System.out.println(ivanEfremov.equals(originBraun2));
+
     }
 }
