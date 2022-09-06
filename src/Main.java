@@ -15,11 +15,11 @@ public class Main {
         System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+");
 // Задание №10 Методы объектов
 
-        Author ivanEfremov2 = new Author("Николай", "Ефремов");
+        Author ivanEfremov2 = new Author("Иван", "Ефремов");
         Book originBraun2 = new Book("Происхождение",denBraun,2017);
 
         System.out.println(ivanEfremov.equals(ivanEfremov2));
-        System.out.println(ivanEfremov.equals(originBraun2));
-
+        System.out.println(originBraun.equals(originBraun2));
+        System.out.println(originBraun.hashCode() == originBraun2.hashCode());
     }
 }

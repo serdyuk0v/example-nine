@@ -12,14 +12,14 @@ public class Author {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Author)) return false;
         Author author = (Author) o;
-        return Objects.equals(surName, author.surName);
+        return Objects.equals(firstName, author.firstName) && Objects.equals(surName, author.surName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(surName);
+        return Objects.hash(firstName, surName);
     }
 
     public Author(String firstName, String surName) {
